@@ -46,14 +46,38 @@ let impar = 1;
 for (let i =0; i < numeros.length; i++) {
   if( numeros[i] % 2 === par ){
      numeros [i], 'es un numero par';
-     console.log(numeros[i], 'es un numero par');
+//      console.log(numeros[i], 'es un numero par');
      const div5 = document.getElementById("ejercicio5");
        div5.innerHTML += `${numeros[i]}  es un numero par <br>`;
   }
   if( numeros[i] % 2 === impar ){
      numeros [i], 'es un numero impar';
-     console.log(numeros[i], 'es un numero impar');
-     const div6 = document.getElementById("ejercicio5a");
-       div6.innerHTML += `${numeros[i]} es un numero impar <br>`;
+//      console.log(numeros[i], 'es un numero impar');
+     const div5a = document.getElementById("ejercicio5a");
+       div5a.innerHTML += `${numeros[i]} es un numero impar <br>`;
   }
 }
+
+// Ejercicio 6
+
+for (let j=1; j <=5; j++){
+      let linea = "";
+      for (let i=1; i <= 5 ; i++) {
+          linea = linea + " " + j*i;              
+      }
+      // console.log(linea)
+      const div6 = document.getElementById("ejercicio6");
+      div6.innerHTML += `${linea} <br>`;
+}
+   
+// Ejercicio 7
+
+
+
+    
+    
+
+
+                   
+
+
