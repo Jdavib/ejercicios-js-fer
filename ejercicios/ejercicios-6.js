@@ -72,9 +72,87 @@ for (let j=1; j <=5; j++){
    
 // Ejercicio 7
 
+let maxValue = max( 8, 10, 4);
+
+// function max (num1, num2, num3){
+//   if( num1 >= num2 ){
+//     return num1;
+// } else if ( num2 >= num1 ){
+//     return num2;
+// } else if ( num2 >= num3 ){
+//     return num2;
+// } else if (num3 >= num2){
+//     return num3;
+// } else if (num3 >= num1){
+//     return num3;
+// } else (num1 >= num3)
+//     return num1;
+// }
+
+// function max (num1, num2, num3){
+//   if( num1 >= num2 ){
+//     return num1;
+//   } else{
+//     return num2;
+//   }
+// }
+//   if ( num2 >= num3 ){
+//     return num2;
+//   } else{
+//     if (num1 > num3){
+//     return num1;
+//   } else {
+//       return num3;
+//   }
+
+//   }
+
+function max (num1, num2, num3){
+  if( num1 > num2 ){
+    if ( num1 > num3){
+    return num1;
+    } else {
+      return num3;
+    }
+}
+if ( num2 > num3){
+    return num2;
+    } else {
+      if (num1 > num3){
+      return num1;
+  } else {
+        return num3;
+      }
+}
+}
+
+// console.log( maxValue );
+
+const div7 = document.getElementById("ejercicio7");
+      div7.innerHTML += `${maxValue}`;
+
+// Ejercicio 8
+
+function largestNameOfArray( nameArray){
+let valor = "";
+// let posicion;
+for (let i =0; i < nameArray.length; i++) {
+       
+  if( nameArray[i].length > valor.length ){
+     valor = nameArray[i];
+//      posicion = i; 
+      }  
+  }
+//    console.log( posicion); 
+  console.log( valor); 
+}
+  let heroes = ['Deadpool', 'Ciclope12345678', 'Magneto', 'Profesor Charles Xavier'];
+largestNameOfArray( heroes );
 
 
-    
+// Tip:
+// let hero = 'Strider';
+// hero.length; // 7
     
 
 
