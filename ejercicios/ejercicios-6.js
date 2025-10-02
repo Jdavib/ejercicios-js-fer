@@ -72,7 +72,7 @@ for (let j=1; j <=5; j++){
    
 // Ejercicio 7
 
-let maxValue = max( 8, 10, 4);
+let maxValue = max( 5, 2, 6);
 
 // function max (num1, num2, num3){
 //   if( num1 >= num2 ){
@@ -145,14 +145,55 @@ for (let i =0; i < nameArray.length; i++) {
   }
 //    console.log( posicion); 
   console.log( valor); 
+     const div8 = document.getElementById("ejercicio8");
+     div8.innerHTML = `${valor}`;
 }
   let heroes = ['Deadpool', 'Ciclope12345678', 'Magneto', 'Profesor Charles Xavier'];
 largestNameOfArray( heroes );
 
 
-// Tip:
-// let hero = 'Strider';
-// hero.length; // 7
+// Ejercicio 9
+
+// function heroesThatStartsWith(nameList){
+//       let newNamelist= [];
+// for (let i =0; i < nameList.length; i++) {
+       
+//   if( nameList[i] === superHeroes.startsWith ('S')){
+//      newNamelist = nameList[i];
+//      newNamelist.push(newNamelist);
+     
+//       return newNamelist;
+// }
+// console.log(newNamelist);
+// }
+// }
+
+let nombre = "";
+// letter = letter.toUpperCase();
+function heroesThatStartsWith(nameList){
+      let newNamelist= [];
+for (let i =0; i < nameList.length; i++) {
+       
+  if( nameList[i].startsWith ("S")){
+     nombre = nameList[i];
+     newNamelist.push (nombre);
+     
+      return newNamelist;
+      }
+}
+}
+
+let superHeroes = ['Doom', 'Dr. Strange', 'Hulk', 'She Hulk', 'Spiderman', 'Captain Marvel'];
+let herosWithLetterS = heroesThatStartsWith( superHeroes, 'S' );
+console.log( herosWithLetterS ); // She Hulk, Spiderman
+
+// Tip: Para determinar si un string empieza con una letra
+// let SuperHero = ‘Spiderman';
+// superHero.startsWith(’S’); // true
+// Si se tiene un arreglo vació, por ejemplo:
+// let newHeroes = [];
+// Se puede insertar en el arreg
+// newHeroes.push('Hulk');
     
 
 
